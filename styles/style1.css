@@ -37,6 +37,43 @@ body {
 	box-shadow: 0 0 10px 1px black;
 	border: 1px solid #1F3355;
 }
+#banner h1 {
+	margin-top: 0.6em;
+	line-height: 0.9em;
+	text-align: center;
+	display: block;
+	font-family: 'Amarante', federant;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4em;
+	color: white;
+	text-shadow: 0 0 10px black;
+}
+
+#banner h2 {
+	margin-bottom: 0.8em;
+	line-height: 0.1em;
+	text-align: center;
+	display: block;
+	font-family: 'Amarante', federant;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2em;
+	color: white;
+	text-shadow: 0 0 10px black;
+}
+#banner h2::before {
+	content: "~ ";
+}
+#banner h2::after {
+	content: " ~";
+}
+nav {
+	
+}
+
+
+
 @media all and (max-width : 768px) {
 	body {
 		background-image: none;
@@ -49,5 +86,18 @@ body {
 		width: 90vw;	
 		min-height: 120px;
 	}
-	
+	#banner h1 {
+		font-size: 3em;
+		line-height: 1em;
+		margin-top: 0.2em;
+	}
+	#banner h2 {
+		font-size: 1.5em;
+	}
+	#banner h2::before {
+	content: "";
+	}
+	#banner h2::after {
+		content: "";
+	}
 }
