@@ -18,7 +18,7 @@ body {
 	margin-top: 0px;
 	box-shadow: 0 0 20px 0px black;
 	padding-top: 10px;
-	min-width: 300px;
+	min-width: 750px;
 }
 #banner {
 	margin: 1;
@@ -31,7 +31,7 @@ body {
 	background-repeat: no-repeat;
 	background-color: #526d95;
 	overflow: auto;
-	width: 60vw;
+	width: 90%;
 	min-height: 150px;
 	border-radius: 10px;
 	box-shadow: 0 0 10px 1px black;
@@ -69,7 +69,47 @@ body {
 	content: " ~";
 }
 nav {
-	
+	margin-top: 15px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	overflow: auto;
+	width: 95%;
+	text-align: center;
+}
+nav a {
+	background-color: #526d95;
+	position: relative;
+	color: white;
+	margin-left: -5px;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-left: 6px;
+	border: 1px solid #1F3355;
+	text-decoration: none;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-shadow: 0 0 10px black;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+nav a:first-of-type {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+nav a:last-of-type {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 
@@ -81,9 +121,10 @@ nav {
 	#main {
 		width: auto;
 		box-shadow: none;
+		min-width: 217px;
 	}
 	#banner {
-		width: 90vw;	
+		width: 90%;	
 		min-height: 120px;
 	}
 	#banner h1 {
@@ -99,5 +140,51 @@ nav {
 	}
 	#banner h2::after {
 		content: "";
+	}
+	nav {
+	margin-top: 15px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 3px;
+	padding-bottom: 5px;
+	overflow: auto;
+	width: 75%;
+	max-width: 350px;
+	text-align: center;
+	}
+	nav a {
+		background-color: #526d95;
+		position: relative;
+		color: white;
+		margin-left: 0px;
+		padding-top: 6px;
+		padding-right: 6px;
+		padding-bottom: 4px;
+		padding-left: 6px;
+		border: 1px solid #1F3355;
+		text-decoration: none;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		display: block;
+		text-shadow: 0 0 10px black;
+	}
+	nav a:first-of-type {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 0px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 0px;
+	}
+	nav a:last-of-type {
+		border-top-left-radius: 0px;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 10px;
+	}
+}
+@media all and (max-width : 288px) {
+	#banner {
+		background-image: none;
 	}
 }
